@@ -14,43 +14,57 @@
       padding: 0;
       background: #f9f9f9;
       color: #333;
-      line-height: 1.6;
     }
     header {
       background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
       color: white;
       text-align: center;
-      padding: 70px 20px 40px;
+      padding: 60px 20px 30px;
+    }
+    .logo {
+      width: 120px;
+      height: auto;
+      margin-bottom: 20px;
     }
     header h1 {
       font-size: 36px;
-      margin-bottom: 12px;
+      margin: 0;
     }
     header p {
-      font-size: 18px;
-      font-weight: 600;
+      margin: 10px 0 0;
+      font-weight: 500;
     }
     nav {
-      background-color: #0078e7;
-      padding: 14px 0;
-      text-align: center;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
+      background-color: #ffffff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
     }
-    nav a {
-      color: white;
+    .nav-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      max-width: 1000px;
+      margin: auto;
+      padding: 10px;
+    }
+    .nav-container a {
+      margin: 8px 14px;
+      padding: 6px 12px;
       text-decoration: none;
-      margin: 0 20px;
-      font-weight: bold;
+      color: #0078e7;
+      font-weight: 600;
+      border-bottom: 2px solid transparent;
+      transition: border-bottom 0.2s ease;
+    }
+    .nav-container a:hover {
+      border-bottom: 2px solid #0078e7;
     }
     .container {
-      max-width: 1000px;
+      max-width: 900px;
       margin: 40px auto;
       padding: 20px;
       background: white;
       border-radius: 10px;
-      box-shadow: 0 0 12px rgba(0,0,0,0.06);
+      box-shadow: 0 0 10px rgba(0,0,0,0.04);
     }
     h2 {
       text-align: center;
@@ -96,17 +110,20 @@
 </head>
 <body>
   <header>
+    <img src="logo.png" alt="Only The Best Logo" class="logo" />
     <h1>Only The Best</h1>
     <p>לא כל אחד יכול לקנות אצלנו</p>
   </header>
 
   <nav>
-    <a href="index.html">בית</a>
-    <a href="products.html">מוצרים</a>
-    <a href="about.html">עלינו</a>
-    <a href="articles.html">מאמרים</a>
-    <a href="contact.html">צור קשר</a>
-    <a href="admin/">ניהול</a>
+    <div class="nav-container">
+      <a href="index.html">בית</a>
+      <a href="products.html">מוצרים</a>
+      <a href="about.html">עלינו</a>
+      <a href="articles.html">מאמרים</a>
+      <a href="contact.html">צור קשר</a>
+      <a href="admin/index.html">ניהול</a>
+    </div>
   </nav>
 
   <div class="container">
