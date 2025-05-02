@@ -1,0 +1,8 @@
+
+body { font-family: sans-serif; margin: 0; background: #f9f9f9; color: #333; }
+header { background: linear-gradient(to right, #0f2027, #203a43, #2c5364); color: white; text-align: center; padding: 20px; }
+.logo { width: 100px; margin-bottom: 10px; }
+nav { display: flex; justify-content: center; background: #fff; box-shadow: 0 1px 4px rgba(0,0,0,0.1); padding: 10px; gap: 20px; }
+nav a { text-decoration: none; color: #0078e7; font-weight: bold; }
+main { padding: 20px; text-align: center; }
+footer { background: #0f2027; color: white; text-align: center; padding: 10px; }
