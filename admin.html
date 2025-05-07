@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Index - AI Recommended 4U</title>
+  <title>Admin - AI Recommended 4U</title>
   
 <style>
   body {
@@ -82,6 +82,14 @@
   }
 </style>
 
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const pwd = prompt("Enter admin password:");
+      if (pwd !== "1234") {
+        document.body.innerHTML = "<h2 style='text-align:center; margin-top:100px;'>Access Denied</h2>";
+      }
+    });
+  </script>
 </head>
 <body>
   <header>
@@ -95,7 +103,9 @@
     </nav>
   </header>
   <main>
-    <h2>Welcome to AI Recommended 4U</h2><p>Let AI help you shop smarter.</p><a class='cta' href='aliexpress.html'>Start Shopping</a>
+    <h2>Admin Panel</h2>
+    <p>This section is protected. Add logo, manage products, etc.</p>
+    <div class='product'><strong>[ Logo Placeholder ]</strong></div>
   </main>
   <footer>
     &copy; 2025 AI Recommended 4U
