@@ -1,202 +1,29 @@
+
 <!DOCTYPE html>
-<html lang="he">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI Recommended - השוואות מומלצות</title>
-  <style>
-    :root {
-      --bg-color: #f4f7fa;
-      --text-color: #111;
-      --accent-color: #1a73e8;
-      --transition-fast: 0.3s;
-      --transition-slow: 0.7s;
-    }
-    [data-theme="dark"] {
-      --bg-color: #1c1c1c;
-      --text-color: #f0f0f0;
-      --accent-color: #66ccff;
-    }
-    * {
-      transition: background-color var(--transition-fast), color var(--transition-fast), transform var(--transition-fast);
-    }
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: var(--bg-color);
-      color: var(--text-color);
-    }
-    header {
-      background-color: #0b2545;
-      color: white;
-      padding: 1rem 2rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-    header img {
-      height: 40px;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin-left: 1.2rem;
-      font-weight: bold;
-      position: relative;
-    }
-    nav a:hover::after {
-      content: '';
-      position: absolute;
-      width: 100%;
-      height: 2px;
-      background: var(--accent-color);
-      left: 0;
-      bottom: -4px;
-    }
-    .language-toggle, .theme-toggle {
-      cursor: pointer;
-      margin-left: 1rem;
-      padding: 0.4rem 0.6rem;
-      border-radius: 5px;
-      background: #eee;
-      color: #000;
-      font-size: 0.9rem;
-    }
-    .hero {
-      padding: 3rem 2rem;
-      background: linear-gradient(to right, #cfe9ff, #e0f3ff);
-      text-align: center;
-    }
-    .hero h1 {
-      font-size: 2.5rem;
-    }
-    .hero p {
-      max-width: 700px;
-      margin: auto;
-      font-size: 1.2rem;
-    }
-    .product-section {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1.5rem;
-      padding: 2rem;
-    }
-    .product-card {
-      background: #fff;
-      border-radius: 10px;
-      padding: 1rem;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-      transition: transform 0.3s;
-    }
-    .product-card:hover {
-      transform: translateY(-5px);
-    }
-    .product-card img {
-      width: 100%;
-      border-radius: 6px;
-    }
-    .product-card h3 {
-      margin: 0.8rem 0 0.4rem;
-    }
-    .product-card p {
-      color: #333;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem;
-      background: #f0f0f0;
-      font-size: 0.85rem;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Recommended 4U</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <header>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Artificial_Intelligence_logo.svg/200px-Artificial_Intelligence_logo.svg.png" alt="AI Logo">
-    <nav>
-      <a href="#">דף הבית</a>
-      <a href="#">טלפונים</a>
-      <a href="#">מטבח</a>
-      <a href="#">שיער</a>
-      <a href="#">מאמרים</a>
-      <a href="#">אודות</a>
-      <span class="language-toggle" onclick="toggleLanguage()">🌐</span>
-      <span class="theme-toggle" onclick="toggleTheme()">🌓</span>
-    </nav>
-  </header>
-
-  <section class="hero">
-    <h1>ברוכים הבאים ל-AI Recommended</h1>
-    <p>בחירות חכמות באמת – כל ההשוואות הכי מעודכנות, כל המוצרים הכי שווים, הכל במקום אחד.</p>
-  </section>
-
-  <section class="product-section">
-    <div class="product-card">
-      <img src="https://images.unsplash.com/photo-1616628182502-2e758f18a474" alt="Samsung Galaxy S24">
-      <h3>Samsung Galaxy S24</h3>
-      <p>מכשיר הדגל של סמסונג לשנת 2024 עם מצלמה חכמה וסוללה עוצמתית.</p>
-    </div>
-    <div class="product-card">
-      <img src="https://images.unsplash.com/photo-1606811841316-c38e1ba81b0c" alt="Dyson Supersonic">
-      <h3>Dyson Supersonic Hair Dryer</h3>
-      <p>מייבש שיער חזק, שקט ויוקרתי – הבחירה של המקצוענים.</p>
-    </div>
-    <div class="product-card">
-      <img src="https://images.unsplash.com/photo-1583324113626-70df0f4deaab" alt="Philips Airfryer XL">
-      <h3>Philips Airfryer XL</h3>
-      <p>הטיגון הבריא של 2025 – בלי שמן, בלי רגשות אשמה.</p>
-    </div>
-  </section>
-
-  <footer>
-    &copy; 2025 AI Recommended. ניתוחים חכמים, בחירות מדויקות, הכל בשבילך.
-  </footer>
-
-  <!-- Admin Logo Upload -->
-  <div style="text-align: center; padding: 1rem;">
-    <label for="logoInput">העלה לוגו אישי (Admin): </label>
-    <input type="file" id="logoInput" accept="image/*">
-  </div>
-
-  <script>
-    function toggleTheme() {
-      const html = document.documentElement;
-      if (html.getAttribute('data-theme') === 'dark') {
-        html.removeAttribute('data-theme');
-        localStorage.setItem('theme', 'light');
-      } else {
-        html.setAttribute('data-theme', 'dark');
-        localStorage.setItem('theme', 'dark');
-      }
-    }
-    if (localStorage.getItem('theme') === 'dark') {
-      document.documentElement.setAttribute('data-theme', 'dark');
-    }
-
-    function toggleLanguage() {
-      const current = document.documentElement.lang;
-      document.documentElement.lang = current === 'he' ? 'en' : 'he';
-      location.reload();
-    }
-  document.getElementById('logoInput')?.addEventListener('change', function(e) {
-  const file = e.target.files[0];
-  if (!file) return;
-  const reader = new FileReader();
-  reader.onload = function(event) {
-    const img = document.querySelector('header img');
-    img.src = event.target.result;
-    localStorage.setItem('customLogo', event.target.result);
-  };
-  reader.readAsDataURL(file);
-});
-
-if (localStorage.getItem('customLogo')) {
-  document.querySelector('header img').src = localStorage.getItem('customLogo');
-}
-</script>
+    <header>
+        <h1>AI Recommended 4U</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products/aliexpress/index.html">AliExpress Picks</a>
+            <a href="legal/index.html">Legal</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Let AI Help You Shop Smarter</h2>
+        <p>Discover AI-curated, high-quality products from around the web.</p>
+        <a href="products/aliexpress/index.html" class="cta">Start Shopping</a>
+    </main>
+    <footer>
+        <p>&copy; 2025 AI Recommended 4U</p>
+        <a href="legal/index.html">Legal Information</a>
+    </footer>
 </body>
 </html>
-
