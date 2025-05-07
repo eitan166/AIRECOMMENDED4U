@@ -1,43 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>AI Recommended 4U</title>
-  <style>
-    body { font-family: 'Segoe UI', sans-serif; background-color: #f8f9fa; color: #222; margin: 0; }
-    header, footer { background-color: #0d1b2a; color: white; text-align: center; padding: 20px 0; }
-    nav { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
-    nav a { color: white; text-decoration: none; font-weight: bold; padding: 6px 12px; }
-    nav a:hover { text-decoration: underline; }
-    main { padding: 40px; max-width: 900px; margin: auto; }
-    h1, h2 { color: #0d1b2a; }
-    .cta { background-color: #007bff; color: white; padding: 10px 20px; text-decoration: none; display: inline-block; margin-top: 20px; }
-    .cta:hover { background-color: #0056b3; }
-  </style>
+  <meta charset="UTF-8">
+  <title>Index - AI Recommended 4U</title>
+  
+<style>
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f8;
+    color: #333;
+  }
+  header {
+    background-color: #002244;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 10px;
+  }
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
+  nav a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #00d4ff;
+    transition: 0.3s ease-in-out;
+  }
+  nav a:hover {
+    color: #00d4ff;
+  }
+  nav a:hover::after {
+    width: 100%;
+  }
+  main {
+    max-width: 900px;
+    margin: auto;
+    padding: 50px 20px;
+    background-color: #fff;
+    margin-top: 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  footer {
+    background-color: #002244;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 60px;
+  }
+  h1, h2 {
+    color: #002244;
+  }
+  .product {
+    padding: 15px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    background-color: #fafafa;
+    border-radius: 5px;
+  }
+  .cta {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+  }
+  .cta:hover {
+    background-color: #0056b3;
+  }
+</style>
+
+  
 </head>
 <body>
-
-<header>
-  <h1>AI Recommended 4U</h1>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="aliexpress.html">AliExpress</a>
-    <a href="blog.html">Blog</a>
-    <a href="contact.html">Contact</a>
-    <a href="legal.html">Legal</a>
-  </nav>
-</header>
-
-<main>
-  <h2>Welcome to AI Recommended 4U</h2>
-  <p>Discover the smartest picks online. Let AI help you shop better, faster, and smarter.</p>
-  <a class="cta" href="aliexpress.html">Start Shopping</a>
-</main>
-
-<footer>
-  &copy; 2025 AI Recommended 4U
-</footer>
-
+  <header>
+    <h1>AI Recommended 4U</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="aliexpress.html">AliExpress</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+      <a href="legal.html">Legal</a>
+    </nav>
+  </header>
+  <main>
+    <h2>Welcome to AI Recommended 4U</h2><p>Discover smarter shopping with AI-powered product suggestions.</p>
+  </main>
+  <footer>
+    &copy; 2025 AI Recommended 4U
+  </footer>
 </body>
 </html>
